@@ -1,6 +1,4 @@
 # JavaScript_study
-# JavaScript
-<hr/>
 ## JavaScript 타입
 * 수(Number)
 * 문자열(String)
