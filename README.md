@@ -1,2 +1,1 @@
 # JavaScript_study 
-### JavaScrip
