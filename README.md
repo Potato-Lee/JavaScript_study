@@ -8,6 +8,7 @@
 * 기호(Symbol)
 * 정의되지 않음(Undefined)
 * 널(Null)
+<hr/>
 * 객체
 	* 배열(Array)객체
 	* 날짜(Date)객체
