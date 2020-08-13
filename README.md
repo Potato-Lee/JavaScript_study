@@ -1,4 +1,5 @@
-# JavaScript_study , [JavaScript 재입문하기](https://developer.mozilla.org/ko/docs/A_re-introduction_to_JavaScript)
+# JavaScript_study 
+참조 [JavaScript 재입문하기](https://developer.mozilla.org/ko/docs/A_re-introduction_to_JavaScript)
 ## JavaScript 타입
 * 수(Number)
 * 문자열(String)
