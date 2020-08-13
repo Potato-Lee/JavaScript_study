@@ -48,7 +48,7 @@ JavaScript에서 변수에 값을 주지 않고 선언하는 것이 가능
 변수의 타입은 undefined가 됨  
 * 부울타입을 가짐(true,false값을 가지는), 어떤 값을 부울값으로 변환할 수 있음
 	1. false, 0, 빈 문자열(" "), 수가 아님을 뜻하는 NaN,null, undefined 모두 false
-	1. 다른 모든 값은 true
+	2. 다른 모든 값은 true
 ```
 Boolean( ' ' ); //false
 Boolean(234); //true
