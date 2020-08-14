@@ -101,7 +101,7 @@ for(let v in array){
 }
 ```
 * &&(두개 다 true일 경우 true반환)와 ||(둘 중에 하나라도 true일경우 true반환)연산자 
-* 삼중 연산자, 조건에 true이면, true에 해당하는 값이 반환, false이면 false에 해당하는 값이 
+* 삼중 연산자, 조건에 true이면, true에 해당하는 값이 반환, false이면 false에 해당하는 값이 반환   
 ``` ( 조건 ) ? true : false ; ```
 
 <hr/>
