@@ -33,7 +33,14 @@ Math.max(array);
 
 ### 문자열(Strings)
 JavaScript에서 문자열은 유니코드 문자들이 연결되어 만들어진 것 (문자열도 객체로 취급됨)  
-문자열도 객체로 취급되므로 메소드도 포함함
+문자열도 객체로 취급되므로 메소드도 포함
+* 문자열 속성,메소드 
+```
+'hello'.length; // 5
+'hello'.charAt(0); // h
+'hello, world'.replace('hello','goodbye'); // goodbye, world
+'hello'.toUpperCase(); // HELLO
+```
 
 <hr/>
 
