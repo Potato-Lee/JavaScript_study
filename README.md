@@ -13,6 +13,7 @@
 	* 배열(Array)객체
 	* 날짜(Date)객체
 	* 정규식(RegExp)객체
+	
 ### 수(Numbers)
 * 덧셈, 뺄셈, 계수 (또는 나머지) 연산을 포함하는 표준 산술 연산자가 지원됨
 * 또한 고급 수학 함수와 상수를 다루기 위한 Math 내장객체가 있음
@@ -87,20 +88,20 @@ Boolean(234); //true
 * do-while반복문
 * for 반복문
 * switch case문
-* for...of문
+* for...of문, for...in문
 ```
-for(let value of array){
-	//value로 작업을 실행함
+var array = [9,8,7];
+
+for(let v of array){
+	console.log(v); // 결과가 9 , 8 , 7, 배열의 요소가 나옴
 }
-```
-* for...in
-```
-for(let property in object){
-	//object의 항목(property)으로 작업을 실행함
+
+for(let v in array){
+	console.log(v); // 결과가 0 , 1 , 2, 배열의 인덱스가 나옴 
 }
 ```
 * &&(두개 다 true일 경우 true반환)와 ||(둘 중에 하나라도 true일경우 true반환)연산자 
-* 삼중 연산자  
+* 삼중 연산자, 조건에 true이면, true에 해당하는 값이 반환, false이면 false에 해당하는 값이 
 ``` ( 조건 ) ? true : false ; ```
 
 <hr/>
@@ -119,25 +120,7 @@ JavaScript내의 모든것들은 객체로 취급
 ```
 obj.details.color; //orange
 obj[ "details" ][ "size" ]; //12
-```
-객체 프로토 타입(Person)과 프로토타입의 인스턴스(you)를 생성함
-```
-function Person(name, age) {
-	this.name = name;
-	this.age = age;
-}
-
-var you = new Person('You', 24);
-```
-```
-obj["name"] = "Simon";
-var name = obj["name"];
-
-var user = prompt('what is your key?');
-obj[user] = prompt('what is its value?');
-```
-의미적으로 같음, 두번째 방법은 속성의 이름이 실행기간에 계산될 수 있는 문자열로 주어짐  
-하지만 이 방법을 사용하면 일부 JavaScript엔진과 압축기 최적화를 적용할 수 없음  
+```  
 
 <hr/>
 
@@ -147,13 +130,14 @@ obj[user] = prompt('what is its value?');
 * 존재하지 않는 배열 인덱스를 참조하려고 하면 undefined를 얻게됨
 * for...in루프를 이용하여 배열에 루프를 돌릴수도 있지만, 이방법은 배열 요소를 반복하는게  
 아니라 배열인덱스를 반복함  
-forEach()  
+* forEach()  
 ```
-[ 'dog', 'cat', 'hen' ].forEach(function(currentValue, index, array) {
-	//currentValue나 array[index]로 뭔가를 수행
+var numbers= [1,2,3,4,5,6,7,8];
+
+numbers.forEach(function(number){
+	console.log(number); // 1 2 3 4 5 6 7 8이 나옴
 }
 ```
-* for...of문, for...in문 사용가능, for...in문은 배열요소를 반복하는게 아니라 배역 인덱스를 반복함
 * array.push(배열에 추가할 요소)
 
 <hr/>
