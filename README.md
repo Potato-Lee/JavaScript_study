@@ -179,7 +179,7 @@ this키워드, this는 현재 객체를 참조함
 function aaaa(){
 	var color='red';
 	function bbbb(){
-		conole.log(color);
+		conole.log(color); // 결과 red
 	}
 	bbbb();
 }
